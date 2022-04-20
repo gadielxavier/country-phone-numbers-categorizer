@@ -58,8 +58,6 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th scope="col">Id</th>
-                                    <th scope="col">Name</th>
                                     <th scope="col">Country</th>
                                     <th scope="col">State</th>
                                     <th scope="col">Country Code</th>
@@ -69,8 +67,6 @@
                             <tbody>
                                 @foreach($customers as $customer)
                                 <tr>
-                                    <td>{{ $customer->id }}</td>
-                                    <td>{{ $customer->name }}</td>
                                     <td>{{ $customer->getPhoneNumber()->getCountry() }}</td>
                                     <td>{{ $customer->getPhoneNumber()->getState() }}</td>
                                     <td>{{ $customer->getPhoneNumber()->getCountryCode() }}</td>
